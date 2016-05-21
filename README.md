@@ -1,2 +1,2 @@
-# huff
-Roll-yer-own Huffman compression library.
+# Huff
+Huffman compression Maven package for Java.
