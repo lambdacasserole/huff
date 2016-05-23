@@ -15,3 +15,6 @@ The `HuffmanCompressor` class is also capable of decompressing the data using a 
 Huff is absolutely not a package that will produce archive files out-of-the-box. It is also not an optimised-for-speed implementation. If you do use it for file compression, serializing the `PrefixCodeTable` and bit count for storage alongside your compressed data is up to you. 
 
 That said, when you need to transparently Huffman-code a byte array (or even just do a basic frequency analysis on it), Huff is a good choice. 
+
+## Contributing
+For most intents and purposes, Huff is considered to fulfil its original use case. Bug fixes and suggestions are welcome, however, from any member of the community.
