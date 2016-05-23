@@ -78,10 +78,12 @@ public class Node {
      * @param bits  the {@link BitSequence} to place bits into
      */
     private void buildBitSequence(Node child, BitSequence bits) {
+        // Append bit from calling child.
         if (child != null) { 
             bits.append(child != children[0]); 
         }
-        
+
+        // Pass bit sequence to parent.
         if (hasParent()) {
             parent.buildBitSequence(this, bits);
         }
