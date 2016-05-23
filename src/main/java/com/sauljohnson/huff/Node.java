@@ -120,6 +120,7 @@ public class Node {
      * @return  an XML string representing this tree node and its children
      */
     public String toXml() {
+        // Add XML tag for node.
         final StringBuilder sb = new StringBuilder();
         sb.append("<node frequency=\"")
                 .append(frequency)
@@ -158,7 +159,6 @@ public class Node {
                     nodes[i + 1] = temp;
                     swapped = true;
                 }
-                
             }
         }
     }
@@ -169,7 +169,6 @@ public class Node {
      * @return      a sorted node array with the combined node as its first member
      */
     public static Node[] combineLeastFrequent(Node[] nodes) {
-       
         // Sort by frequency.
         sortByFrequency(nodes);
         
@@ -182,7 +181,6 @@ public class Node {
         System.arraycopy(nodes, 2, newNodeArray, 1, nodes.length - 2);
         
         return newNodeArray;
-        
     }
     
     /**
