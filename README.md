@@ -17,7 +17,7 @@ Huff is absolutely not a package that will produce archive files out-of-the-box.
 That said, when you need to transparently Huffman-code a byte array (or even just do a basic frequency analysis on it), Huff is a good choice. 
 
 ## Benchmarks
-Once again, this package isn't designed for straight-up file compression out of the box. If you do use it for that, however, here are some benchmarks running against the [Canterbury Corpus](http://corpus.canterbury.ac.nz/). Note that the compressed sizes do not include any space for the serialized prefix code tables/bit count needed to decompress the files again.
+Once again, this package isn't designed for straight-up file compression out of the box. If you do use it for that, however, here are some benchmarks running against the [Canterbury Corpus](http://corpus.canterbury.ac.nz/). Note that the compressed sizes do not include any space for the serialized prefix code tables/bit count needed to decompress the files again. Times are for a 1.58GHz x64 CPU with 4GB available RAM.
 
 | File         | Uncompressed (Bytes) | Compressed (Bytes) | Ratio | Space Saving | Time (ms) |
 |--------------|----------------------|--------------------|-------|--------------|-----------|
