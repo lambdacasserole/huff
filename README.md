@@ -11,6 +11,30 @@ Huff is designed to provide a simple starting point for applications seeking to 
 
 The `HuffmanCompressor` class is also capable of decompressing the data using a prefix code table, a bit count and a compressed byte array.
 
+## Installation
+You can pull this package into your Maven project straight from here using JitPack. Add JitPack as a repository first:
+
+```
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+Then add a dependency on Huff:
+
+```
+<dependencies>
+    <dependency>
+        <groupId>com.github.lambdacasserole</groupId>
+        <artifactId>huff</artifactId>
+        <version>v1.0</version>
+    </dependency>
+</dependencies>
+```
+
 ## Limitations
 Huff is absolutely not a package that will produce archive files out-of-the-box. It is also not an optimised-for-speed implementation. If you do use it for file compression, serializing the `PrefixCodeTable` and bit count for storage alongside your compressed data is up to you. 
 
